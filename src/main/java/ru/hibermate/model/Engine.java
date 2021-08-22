@@ -4,9 +4,23 @@
 
 package ru.hibermate.model;
 
-/**
- * Класс Engine
+import lombok.*;
+/*
+условия для hibermate
+1. пустой конструктор
+2. геттеры и сеттеры
+3. долно быть своё id - в таблице долно быть как PRIMARY KEY,
+   т.е.первичный ключ, иначе не сможет работать с hibermate
+4. класси не долден быть final
+Все условия соблюдены в представленном классе.
  */
+// дожен быть первыичный ключ
+@Data // геттеры и сеттеры
+@ToString  //
+@EqualsAndHashCode //
+@NoArgsConstructor  // требование пустого конструктора - ламбук
+@AllArgsConstructor
+
 public class Engine {
 
 	private String model;
