@@ -15,9 +15,9 @@ import lombok.*;
 Все условия соблюдены в представленном классе.
  */
 // дожен быть первыичный ключ
-@Data // геттеры и сеттеры
-@ToString  //
-@EqualsAndHashCode //
+@Data 
+@ToString 
+@EqualsAndHashCode 
 @NoArgsConstructor  // требование пустого конструктора - ламбук
 @AllArgsConstructor
 
@@ -25,4 +25,17 @@ public class Engine {
 
 	private String model;
 	private int power;
+
+
+	public void setModel(String model) {
+		this.model = model;
+	}
+
+	public String getModel() {
+		return model;
+	}
+
+	public void setPower(int power) {
+		this.power = power;
+	}
 }
