@@ -4,13 +4,13 @@
 
 package ru.hibermate.dao;
 
-import com.sun.istack.NotNull;
+//import com.sun.istack.internal.NotNull;
+
+import com.sun.istack.internal.NotNull;
 import org.hibernate.*;
 import ru.hibermate.model.Engine;
 
-/**
- * Класс EngineDAO
- */
+
 public class EngineDAO implements DAO<Engine, String> {
 
 	private final SessionFactory factory;
